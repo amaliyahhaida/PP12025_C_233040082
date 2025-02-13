@@ -1,4 +1,4 @@
-package ElemenListNode;
+package Pertemuan2;
 
 public class Node {
 	private int nilai;
@@ -7,7 +7,7 @@ public class Node {
 	// inisialisasi Node
 	public Node (int nilai) {
 		this.nilai = nilai;
-		this.next = null; // Default next adalah null
+     // this.next = null; // Default next adalah null
 	}
 	
 		// Setter & Getter
