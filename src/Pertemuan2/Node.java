@@ -7,10 +7,9 @@ public class Node {
 	// inisialisasi Node
 	public Node (int nilai) {
 		this.nilai = nilai;
-     // this.next = null; // Default next adalah null
 	}
 	
-		// Setter & Getter
+	// Setter & Getter
 	
     // Setter untuk nilai
     public void setNilai(int nilai) {
