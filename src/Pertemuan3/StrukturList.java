@@ -13,41 +13,41 @@ public class StrukturList {
 
 	 // Latihan - 2 addTail
 	    public void addTail(int data) {
-	        Node posNode = null, curNode = null; // Pointer sementara
-	        Node newNode = new Node(data); // Buat node baru
+	        Node posNode = null, curNode = null; 
+	        Node newNode = new Node(data); 
 
 	        if (isEmpty()) {
-	            HEAD = newNode; // Jika kosong, HEAD langsung diisi newNode
+	            HEAD = newNode; 
 	        } else {
-	            curNode = HEAD; // Mulai dari HEAD
-	            while (curNode != null) { // Iterasi sampai node terakhir
+	            curNode = HEAD; 
+	            while (curNode != null) { 
 	                posNode = curNode;
 	                curNode = curNode.getNext();
 	            }
-	            posNode.setNext(newNode); // Set node terakhir menunjuk ke newNode
+	            posNode.setNext(newNode); 
 	        }
 	    }
 
 	 // Latihan - 3
 	    public void displayElement() {
-	        Node curNode = HEAD; // Mulai dari HEAD
-	        while (curNode != null) { // Iterasi selama node tidak null
+	        Node curNode = HEAD; 
+	        while (curNode != null) { 
 	            System.out.print(curNode.getData() + " -> ");
-	            curNode = curNode.getNext(); // Pindah ke node berikutnya
+	            curNode = curNode.getNext();
 	        }
-	        System.out.println("null"); // Akhiran tampilan
+	        System.out.println("null"); 
 	    }
 
 
 	 // Latihan - 5 addHead
 	    public void addHead(int data) {
-	        Node newNode = new Node(data); // Buat node baru dengan data
+	        Node newNode = new Node(data); 
 
-	        if (isEmpty()) { // Jika list kosong
-	            HEAD = newNode; // Jadikan newNode sebagai HEAD
+	        if (isEmpty()) { 
+	            HEAD = newNode; 
 	        } else {
-	            newNode.setNext (HEAD); // Hubungkan newNode ke HEAD lama
-	            HEAD = newNode; // Perbarui HEAD ke newNode
+	            newNode.setNext (HEAD); 
+	            HEAD = newNode; 
 	        }
 	    }
 	} 
