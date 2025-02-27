@@ -3,16 +3,16 @@ package Pertemuan4;
 // Pengujian Tugas 2 (a)
 public class StrukturListTest_Tugas2_AdanB {
     public static void main(String[] args) {
-        StrukturListDouble listA = new StrukturListDouble(); // Membuat list baru
-        listA.addHead(2.1); // awal
+        StrukturListDouble listA = new StrukturListDouble(); 
+        listA.addHead(2.1); 
         listA.addTail(3.4);
         listA.addTail(4.5);
         System.out.print("List A: "); // Output : 2.1 3.4 4.5 
         listA.displayElement();
 
 // Pengujian Tugas 2 (b)
-        StrukturListDouble listB= new StrukturListDouble(); // Membuat list baru
-        listB.addHead(3.4); // awal
+        StrukturListDouble listB= new StrukturListDouble(); 
+        listB.addHead(3.4); 
         listB.addTail(4.5);
         listB.addTail(5.5);
         listB.addMid(2.1, 2);
